@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ganesshainciensos</title>
+        <link rel="stylesheet" href="../css/estilo.css">
+        <style>
+            /* Estilos generales */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: rgb(224, 208, 208);
+            }
+    
+            /* Estilos para el encabezado */
+            header {
+                background-color: rgb(224, 208, 208);
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+    
+            .Logo {
+                width: 150px;
+            }
+    
+            nav ul {
+                list-style: none;
+                padding: 0;
+            }
+    
+            nav ul li {
+                display: inline;
+                margin: 0 10px;
+            }
+    
+            nav ul li a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: rgb(43, 83, 187);
+            }
+    
+            /* Estilos para el contenido principal */
+            main {
+                margin: 20px;
+                padding: 20px;
+                text-align: center;
+            }
+    
+            h1 {
+                color: rgb(209, 57, 153);
+                text-decoration: underline;
+                margin: 20px 0px;
+            }
+    
+            /* Estilos para la lista de productos */
+            .productos-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+    
+            .productos {
+                text-align: center;
+                margin: 10px;
+                flex: 0 0 calc(33.33% - 20px);
+                max-width: calc(33.33% - 20px);
+            }
+    
+            .imgproductos {
+                width: 100%;
+                height: auto;
+            }
+    
+            /* Estilos para el pie de página */
+            footer {
+                margin-top: 20px;
+                padding: 20px;
+                background-color: #333;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="#">
+                <img class="Logo" src="../img/Ganrshalogo.png" alt="Logo de Ganessha Inciensos">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="puntosdeentrega.html">Puntos de entrega</a></li>
+                    <li><a href="ganesshavip.html">Ganessha VIP</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Nuestros productos</h1>
+            <div class="productos-container">
+                <div class="productos">
+                    <img class="imgproductos" src="../img/prductos.jpg" alt="foto de sahumerios naturales">
+                    <p> Sahumerios naturales </p>
+                    <button> Lo quiero </button>
+                </div>
+                <div class="productos">
+                    <img class="imgproductos" src="../img/sahumerios.jpg" alt="foto de sahumerios artesanales">
+                    <p> Sahumerios artesanales </p>
+                    <button> Lo quiero </button>
+                </div>
+                <div class="productos">
+                    <img class="imgproductos" src="../img/cascada.jpg" alt="foto de cascada">
+                    <p> Cascada </p>
+                    <button> Lo quiero </button>
+                </div>
+                <div class="productos">
+                    <img class="imgproductos" src="../img/combo.jpg" alt="foto de sahumadores">
+                    <p> Sahumadores </p>
+                    <button> Lo quiero</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h2>Seguinos en Instagram</h2>
+            <a href="https://www.instagram.com/ganessha_inciensos/" target="_blank">Instagram</a>
+        </footer>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('.productos-container').slick({
+                infinite: true, // Bucle infinito
+                slidesToShow: 3, // Mostrar 3 imágenes a la vez
+                slidesToScroll: 1, // Desplazarse una imagen a la vez
+                autoplay: true, // Reproducción automática
+                autoplaySpeed: 2000, // Velocidad de reproducción automática (en milisegundos)
+                responsive: [
+                  {
+                    breakpoint: 768,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                  }
+                ]
+              });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ganeshainciensos</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <style>
+            /* Estilos generales */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: rgb(224, 208, 208);
+            }
+    
+            /* Estilos para el encabezado */
+            header {
+                background-color: rgb(224, 208, 208);
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+    
+            .Logo {
+                width: 150px;
+            }
+    
+            nav ul {
+                list-style: none;
+                padding: 0;
+            }
+    
+            nav ul li {
+                display: inline;
+                margin: 0 10px;
+            }
+    
+            nav ul li a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: rgb(43, 83, 187);
+            }
+    
+            /* Estilos para el contenido principal */
+            main {
+                margin: 20px;
+                padding: 20px;
+            }
+    
+            h1 {
+                text-align: center;
+                color:  rgb(224, 208, 208);
+                text-decoration: underline;
+                margin: 20px 0px;
+            }
+    
+            h2 {
+                text-transform: uppercase;
+            }
+    
+            .intro {
+                text-decoration: dashed;
+                text-transform: uppercase;
+                margin: 1%;
+            }
+    
+            .titulo {
+                text-transform: uppercase;
+                text-align: center;
+                background-color: #333;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                font-size: 18px;
+            }
+    
+            .contenedor {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+    
+            .pngdestacado {
+                flex-basis: calc(33.33% - 20px);
+                margin: 10px;
+                text-align: center;
+            }
+    
+            .imgdestacado {
+                width: 100%;
+                height: auto;
+            }
+    
+            .text {
+                color: black;
+                padding: 5px;
+                font-size: 10px;
+                text-transform: uppercase;
+            }
+    
+            /* Estilos para el botón de WhatsApp */
+            .whatsapp-container {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                display: none;
+                transition: transform 0.3s ease-in-out;
+            }
+    
+            .whatsapp {
+                width: 100px;
+            }
+    
+            /* Estilos para mostrar el botón cuando se desplaza */
+            .show-whatsapp {
+                display: block;
+                transform: translateY(0);
+            }
+    
+            /* Estilos para el pie de página */
+            footer {
+                margin: 20px;
+                padding: 20px;
+                border-top: 1px solid black;
+                text-align: center;
+                background-color: #333;
+                color: white;
+            }
+    
+            /* Media Query para ajustar el botón de WhatsApp en dispositivos móviles */
+            @media (max-width: 768px) {
+                .whatsapp-container {
+                    bottom: 10px;
+                    right: 10px;
+                }
+    
+                .whatsapp {
+                    width: 80px;
+                }
+    
+                .show-whatsapp {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <a href="#">
+                <img class="Logo" src="img/Ganrshalogo.png" alt="Logo de Ganessha Inciensos">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="html/productos.html">Productos</a></li>
+                    <li><a href="html/contactos.html">Contactos</a></li>
+                    <li><a href="html/puntosdeentrega.html">Puntos de entrega</a></li>
+                    <li><a href="html/ganesshavip.html">Ganessha VIP</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <h1>Ganesha Inciensos</h1>
+            <h2>¿Quiénes somos?</h2>
+            <p class="intro">Productos para el bienestar, protección y expansión de tu alma y entorno.</p>
+    
+            <h3 class="titulo">Nuestros productos más destacados</h3>
+    
+            <div class="contenedor">
+                <div class="pngdestacado">
+                    <img class="imgdestacado" src="img/sahumosnaturales.jpg" alt="Sahumadores naturales">
+                    <p class="text">Sahumos naturales</p>
+                    <button>Lo quiero</button>
+                </div>
+                <div class="pngdestacado">
+                    <img class="imgdestacado" src="img/bombasdefumacion.jpg" alt="Bombas de fumación">
+                    <p class="text">Bombas de fumación</p>
+                    <button>Lo quiero</button>
+                </div>
+                <div class="pngdestacado">
+                    <img class="imgdestacado" src="img/cascadabuda.jpg" alt="Cascada Buda">
+                    <p class="text">Cascada Buda</p>
+                    <button>Lo quiero</button>
+                </div>
+                <div class="pngdestacado">
+                    <img class="imgdestacado" src="img/sameriospuros.jpg" alt="Sahumerios puros">
+                    <p class="text">Sahumerios puros</p>
+                    <button>Lo quiero</button>
+                </div>
+            </div>
+        </main>
+        <div class="whatsapp-container">
+            <a href="https://api.whatsapp.com/send?phone=Ingrese su numero" target="_blank">
+                <img src="img/whatsapp.png" class="whatsapp" alt="WhatsApp">
+            </a>
+        </div>
+        <footer>
+            <h4>Seguinos en Instagram</h4>
+            <a href="https://www.instagram.com/ganessha_inciensos/" target="_blank">Instagram</a>
+        </footer>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript">
+            window.addEventListener('scroll', function () {
+                var whatsappButton = document.querySelector('.whatsapp-container');
+                if (whatsappButton) {
+                    if (window.scrollY > 100) {
+                        whatsappButton.classList.add('show-whatsapp');
+                    } else {
+                        whatsappButton.classList.remove('show-whatsapp');
+                    }
+                }
+            });
+            $(document).ready(function () {
+                $('.contenedor').slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+    </body>
+</html>
+

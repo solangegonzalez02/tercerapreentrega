@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 208, 208);
+
+    .Logo {
+        width: 150px;
+    }
+
+    .pngdestacado,.imgdestacado {
+        flex-basis: calc(33.33% - 20px);
+        margin: 10px;
+        text-align: center;
+
+    }
+}
+
+
+ // Estilos para el encabezado
+ header {
+     background-color: rgb(224, 208, 208);
+     color: white;
+     text-align: center;
+     padding: 20px;
+
+
+     nav ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      li {
+        display: inline;
+        margin: 0 10px;
+      }
+      
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgb(43, 83, 187);
+      }
+      
+ }
+
+ // Estilos para el contenido principal
+ main {
+     margin: 20px;
+     padding: 20px;
+     text-align: center;
+
+     h1 {
+         color: rgb(209, 57, 153);
+         text-decoration: underline;
+         margin: 20px 0px;
+     }
+ }
+
+ // Estilos para la lista de productos
+ .productos-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+
+     .productos {
+         text-align: center;
+         margin: 10px;
+         flex: 0 0 calc(33.33% - 20px);
+         max-width: calc(33.33% - 20px);
+     }
+
+     .imgproductos {
+         width: 100%;
+         height: auto;
+     }
+
+
+ }
+
+ // Estilos para el pie de página
+ footer {
+     margin-top: 20px;
+     padding: 20px;
+     background-color: #333;
+     color: white;
+     text-align: center;
+ }

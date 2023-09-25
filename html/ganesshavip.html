@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ganesshainciensos</title>
+    
+        <link rel="stylesheet" href="../css/estilo.css">
+        <style>
+            /* Estilos generales */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+    
+            /* Estilos para el encabezado */
+            header {
+                background-color: rgb(224, 208, 208);
+                color: white;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+    
+            .Logo {
+                width: 150px;
+            }
+    
+            nav ul {
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+            }
+    
+            nav ul li {
+                margin-right: 20px;
+            }
+    
+            nav ul li:last-child {
+                margin-right: 0;
+            }
+    
+            nav ul li a {
+                text-decoration: none;
+                color: rgb(24, 27, 214);
+                font-weight: bold;
+            }
+    
+            /* Estilos para el contenido principal */
+            main {
+                padding: 20px;
+            }
+    
+            h1 {
+                text-align: center;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+    
+            .novedades {
+                text-align: center;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+    
+            form {
+                text-align: center;
+            }
+    
+            label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+                color: #333;
+            }
+    
+            input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                border: 2px solid #333;
+                border-radius: 5px;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+    
+            .bformulario {
+                background-color: #333;
+                color: antiquewhite;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                font-size: 18px;
+                margin-right: 10px;
+            }
+    
+            /* Estilos para el pie de página */
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+    
+            footer a {
+                text-decoration: none;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="#">
+                <img class="Logo" src="../img/Ganrshalogo.png" alt="Logo de Ganessha Inciensos">
+            </a>
+        
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="puntosdeentrega.html">Puntos de entrega</a></li>
+                    <li><a href="ganesshavip.html">Ganessha VIP</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <h1>Ganessha VIP</h1>
+    
+            <p class="novedades">¿Quieres recibir novedades de stock y combos?</p>
+    
+            <form>
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="Nombre" placeholder="Ej. Patricia">
+    
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" placeholder="Ej. Gomez">
+    
+                <label for="correo">Correo electrónico</label>
+                <input type="text" id="correo" placeholder="Ej. Patrigomez@gmail.com">
+    
+                <input class="bformulario" type="submit" value="Enviar">
+                <input class="bformulario" type="reset" value="Limpiar">
+            </form>
+        </main>
+    
+        <footer> 
+            <h2>Seguinos en Instagram</h2>
+            <a href="https://www.instagram.com/ganessha_inciensos/" target="_blank">Instagram</a>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+// Estilos generales
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+// Estilos para el encabezado
+header {
+    background-color: rgb(224, 208, 208);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .Logo {
+        width: 150px;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      li {
+        display: inline;
+        margin: 0 10px;
+      }
+      
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgb(43, 83, 187);
+      }
+      
+}
+
+// Estilos para el contenido principal
+main {
+    padding: 20px;
+
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .novedades {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    form {
+        text-align: center;
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .bformulario {
+            background-color: #333;
+            color: antiquewhite;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+    }
+}
+
+// Estilos para el pie de página
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

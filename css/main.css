@@ -1,0 +1,968 @@
+@charset "UTF-8";
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(224, 208, 208);
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: rgb(224, 208, 208);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 5000px;
+}
+
+.Logo {
+  width: 150px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(43, 83, 187);
+}
+
+/* Estilos para el contenido principal */
+main {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+main h1 {
+  color: rgb(209, 57, 153);
+  text-decoration: underline;
+  margin: 20px 0;
+}
+
+/* Estilos para la lista de productos */
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.productos-container .productos {
+  text-align: center;
+  margin: 10px;
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+}
+.productos-container .productos .imgproductos {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para el pie de página */
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(209, 57, 153);
+  text-decoration: underline;
+  margin: 20px 0;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+footer p {
+  font-size: 20px;
+}
+footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(224, 208, 208);
+  font-family: Arial, sans-serif;
+}
+
+header {
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 10px;
+}
+header .Logo {
+  max-width: 100%;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 10px;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(43, 83, 187);
+}
+
+main {
+  margin: 20px;
+  padding: 20px;
+}
+
+.imgproductos {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  margin: 20px;
+  padding: 20px;
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 5px;
+  }
+  nav li {
+    margin: 0 5px;
+  }
+  .imgproductos {
+    width: 100%;
+  }
+}
+input[type=text],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.bformulario {
+  background-color: #333;
+  color: antiquewhite;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.puntodeentrega {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.novedades {
+  text-transform: uppercase;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.intro {
+  text-decoration: dashed;
+  text-transform: uppercase;
+  margin: 1%;
+}
+
+.titulo {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.contenedor {
+  text-align: center;
+}
+
+.text {
+  color: black;
+  padding: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.imgdestacados {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  height: 300px;
+  flex-direction: row;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.pngdestacado {
+  flex: 1 0 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.imgdestacado {
+  width: 100%;
+  height: auto;
+}
+
+.productos {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+.whatsapp-container {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp {
+  width: 100px;
+}
+
+.show-whatsapp {
+  display: block;
+  transform: translateY(0);
+}
+
+.hide-whatsapp {
+  transform: translateY(100px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(224, 208, 208);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 5px;
+  }
+  nav li {
+    margin: 0 5px;
+  }
+  .imgproductos {
+    width: 100%;
+  }
+  input[type=text],
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .whatsapp-container {
+    display: block;
+  }
+}
+header {
+  background-color: rgb(224, 208, 208);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.Logo {
+  width: 150px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(43, 83, 187);
+}
+
+main {
+  margin: 20px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(224, 208, 208);
+  text-decoration: underline;
+  margin: 20px 0px;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.intro {
+  text-decoration: dashed;
+  text-transform: uppercase;
+  margin: 1%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(224, 208, 208);
+}
+
+header {
+  background-color: rgb(224, 208, 208);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.titulo {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pngdestacado {
+  flex-basis: calc(33.33% - 20px);
+  margin: 10px;
+  text-align: center;
+}
+
+.imgdestacado {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  color: black;
+  padding: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  transition: transform 0.3s ease-in-out;
+}
+.whatsapp-container .whatsapp {
+  width: 100px;
+}
+.whatsapp-container.show-whatsapp {
+  display: block;
+  transform: translateY(0);
+}
+
+footer {
+  margin: 20px;
+  padding: 20px;
+  border-top: 1px solid black;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-container {
+    bottom: 10px;
+    right: 10px;
+  }
+  .whatsapp-container .whatsapp {
+    width: 80px;
+  }
+  .whatsapp-container.show-whatsapp {
+    display: block;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(224, 208, 208);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  margin-right: 20px;
+}
+header nav ul li:last-child {
+  margin-right: 0;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(24, 27, 214);
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+main h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: rgb(209, 57, 153);
+  text-decoration: underline;
+  margin: 20px 0px;
+}
+main iframe {
+  display: block;
+  margin: auto;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(224, 208, 208);
+}
+
+header {
+  background-color: rgb(224, 208, 208);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+header .Logo {
+  width: 150px;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(43, 83, 187);
+}
+
+main {
+  margin: 20px;
+  padding: 20px;
+}
+main h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: rgb(209, 57, 153);
+  text-decoration: underline;
+  margin: 20px 0px;
+}
+main .novedades {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+}
+
+form {
+  text-align: center;
+}
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+form input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+form .bformulario {
+  background-color: #333;
+  color: antiquewhite;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(224, 208, 208);
+}
+
+header {
+  background-color: rgb(224, 208, 208);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+header .Logo {
+  width: 150px;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(43, 83, 187);
+}
+
+main {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+main h1 {
+  color: rgb(209, 57, 153);
+  text-decoration: underline;
+  margin: 20px 0px;
+}
+
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.productos-container .productos {
+  text-align: center;
+  margin: 10px;
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+}
+.productos-container .productos .imgproductos {
+  width: 100%;
+  height: auto;
+}
+
+iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  border: 0;
+}
+
+.puntodeentrega {
+  text-transform: uppercase;
+  background-color: rgb(19, 18, 18);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(224, 208, 208);
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: rgb(224, 208, 208);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+header .Logo {
+  width: 100px;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+header li {
+  display: inline;
+  margin: 0 10px;
+}
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(43, 83, 187);
+}
+
+/* Estilos para el contenido principal */
+main {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  /* Estilos para el video */
+}
+main h1 {
+  color: rgb(209, 57, 153);
+  text-decoration: underline;
+  margin: 20px 0px;
+}
+main iframe {
+  display: block;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+/* Estilos para el pie de página */
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(224, 208, 208);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .Logo {
+  width: 150px;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+header li {
+  display: inline;
+  margin: 0 10px;
+}
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(43, 83, 187);
+}
+
+main {
+  padding: 20px;
+}
+main h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+main .novedades {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+main form {
+  text-align: center;
+}
+main form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+main form input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+main form .bformulario {
+  background-color: #333;
+  color: antiquewhite;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(224, 208, 208);
+  /* Estilos para el contenedor del iframe */
+}
+body .iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px; /* Puedes ajustar la altura según tus necesidades */
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: rgb(224, 208, 208);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+header .Logo {
+  width: 150px;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+header li {
+  display: inline;
+  margin: 0 10px;
+}
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(43, 83, 187);
+}
+
+/* Estilos para el contenido principal */
+main {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+main h1 {
+  color: rgb(209, 57, 153);
+  text-decoration: underline;
+  margin: 20px 0px;
+}
+
+/* Estilos para el pie de página */
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgb(3, 3, 3);
+  color: white;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(224, 208, 208);
+}
+body .Logo {
+  width: 150px;
+}
+body .pngdestacado, body .imgdestacado {
+  flex-basis: calc(33.33% - 20px);
+  margin: 10px;
+  text-align: center;
+}
+
+header {
+  background-color: rgb(224, 208, 208);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+header li {
+  display: inline;
+  margin: 0 10px;
+}
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(43, 83, 187);
+}
+
+main {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+main h1 {
+  color: rgb(209, 57, 153);
+  text-decoration: underline;
+  margin: 20px 0px;
+}
+
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.productos-container .productos {
+  text-align: center;
+  margin: 10px;
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+}
+.productos-container .imgproductos {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

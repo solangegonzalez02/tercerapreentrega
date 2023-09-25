@@ -1,0 +1,799 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(224, 208, 208);
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: rgb(224, 208, 208);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 5000px;
+
+}
+
+.Logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(43, 83, 187);
+  }
+  
+  
+
+/* Estilos para el contenido principal */
+main {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+
+    h1 {
+        color: rgb(209, 57, 153);
+        text-decoration: underline;
+        margin: 20px 0;
+    }
+}
+
+/* Estilos para la lista de productos */
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .productos {
+        text-align: center;
+        margin: 10px;
+        flex: 0 0 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+
+        .imgproductos {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+/* Estilos para el pie de página */
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: rgb(209, 57, 153);
+    text-decoration: underline;
+    margin: 20px 0;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+footer {
+    p {
+        font-size: 20px;
+    }
+
+    // Estilos generales
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(224, 208, 208);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 10px;
+  
+    .Logo {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+
+nav {
+    ul {
+        list-style: none;
+        text-align: center;
+        padding: 10px;
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(43, 83, 187);
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+.imgproductos {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    margin: 20px;
+    padding: 20px;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+// Estilos para dispositivos móviles
+@media (max-width: 768px) {
+    header {
+        padding: 5px;
+    }
+
+    nav li {
+        margin: 0 5px;
+    }
+
+    .imgproductos {
+        width: 100%;
+    }
+}
+
+input[type="text"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.bformulario {
+    background-color: #333;
+    color: antiquewhite;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+// Estilos para .puntodeentrega
+.puntodeentrega {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+// Estilos para .novedades
+.novedades {
+    text-transform: uppercase;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+// Estilos para .intro
+.intro {
+    text-decoration: dashed;
+    text-transform: uppercase;
+    margin: 1%;
+}
+
+// Estilos para .titulo
+.titulo {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+// Estilos para .contenedor
+.contenedor {
+    text-align: center;
+}
+
+// Estilos para .text
+.text {
+    color: black;
+    padding: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+// Estilos para .imgdestacados
+.imgdestacados {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 300px;
+    flex-direction: row;
+}
+
+// Estilos para .contenedor
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+// Estilos para .pngdestacado
+.pngdestacado {
+    flex: 1 0 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+// Estilos para .imgdestacado
+.imgdestacado {
+    width: 100%;
+    height: auto;
+}
+
+// Estilos para .productos
+.productos {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+// Estilos para .whatsapp-container
+.whatsapp-container {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+// Estilos para .whatsapp
+.whatsapp {
+    width: 100px;
+}
+
+// Estilos para .show-whatsapp
+.show-whatsapp {
+    display: block;
+    transform: translateY(0);
+}
+
+// Estilos para .hide-whatsapp
+.hide-whatsapp {
+    transform: translateY(100px);
+}
+
+// Estilos generales
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Estilos generales
+body {
+    background-color: rgb(224, 208, 208);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+// Estilos para dispositivos móviles
+@media (max-width: 768px) {
+    header {
+        padding: 5px;
+    }
+
+    nav li {
+        margin: 0 5px;
+    }
+
+    .imgproductos {
+        width: 100%;
+    }
+
+    input[type="text"],
+    textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .whatsapp-container {
+        display: block;
+    }
+}
+
+// Estilos para el encabezado
+header {
+    background-color: rgb(224, 208, 208);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.Logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+        display: inline;
+        margin: 0 10px;
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: rgb(43, 83, 187);
+        }
+    }
+}
+
+// Estilos para el contenido principal
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(224, 208, 208);
+    text-decoration: underline;
+    margin: 20px 0px;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.intro {
+    text-decoration: dashed;
+    text-transform: uppercase;
+    margin: 1%;
+}
+
+// Estilos generales
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 208, 208);
+}
+
+// Estilos para el encabezado
+header {
+    background-color: rgb(224, 208, 208);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+// Estilos para el título
+.titulo {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+// Estilos para el contenedor
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+// Estilos para los elementos destacados
+.pngdestacado {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+.imgdestacado {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    color: black;
+    padding: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+// Estilos para el botón de WhatsApp
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    transition: transform 0.3s ease-in-out;
+
+    .whatsapp {
+        width: 100px;
+    }
+
+    // Estilos para mostrar el botón cuando se desplaza
+    &.show-whatsapp {
+        display: block;
+        transform: translateY(0);
+    }
+}
+
+// Estilos para el pie de página
+footer {
+    margin: 20px;
+    padding: 20px;
+    border-top: 1px solid black;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+// Media Query para ajustar el botón de WhatsApp en dispositivos móviles
+@media (max-width: 768px) {
+    .whatsapp-container {
+        bottom: 10px;
+        right: 10px;
+
+        .whatsapp {
+            width: 80px;
+        }
+
+        &.show-whatsapp {
+            display: block;
+        }
+    }
+}
+
+// Estilos generales
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+// Estilos para el encabezado
+header {
+    background-color: rgb(224, 208, 208);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // Estilos para la lista de navegación en el encabezado
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(24, 27, 214);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// Estilos para el contenido principal
+main {
+    padding: 20px;
+
+    // Estilos para el título principal
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: rgb(209, 57, 153);
+        text-decoration: underline;
+        margin: 20px 0px;
+    }
+
+    // Estilos para el video
+    iframe {
+        display: block;
+        margin: auto;
+    }
+}
+
+// Estilos para el pie de página
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+// Estilos generales
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 208, 208);
+}
+
+// Estilos para el encabezado
+header {
+    background-color: rgb(224, 208, 208);
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+    .Logo {
+        width: 150px;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: inline;
+            margin: 0 10px;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: rgb(43, 83, 187);
+            }
+        }
+    }
+}
+
+// Estilos para el contenido principal
+main {
+    margin: 20px;
+    padding: 20px;
+
+    // Estilos para el título principal
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: rgb(209, 57, 153);
+        text-decoration: underline;
+        margin: 20px 0px;
+    }
+
+    // Estilos para las novedades
+    .novedades {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+// Estilos para el video
+iframe {
+    display: block;
+    margin: auto;
+}
+
+// Estilos para el formulario
+form {
+    text-align: center;
+
+    // Estilos para las etiquetas de formulario
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    // Estilos para los campos de texto en el formulario
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #333;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    // Estilos para el botón del formulario
+    .bformulario {
+        background-color: #333;
+        color: antiquewhite;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+}
+
+// Estilos para el pie de página
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+    // Estilos para los enlaces en el pie de página
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+// Estilos generales
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 208, 208);
+}
+
+// Estilos para el encabezado
+header {
+    background-color: rgb(224, 208, 208);
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+    .Logo {
+        width: 150px;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: inline;
+            margin: 0 10px;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: rgb(43, 83, 187);
+            }
+        }
+    }
+}
+
+// Estilos para el contenido principal
+main {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+
+    h1 {
+        color: rgb(209, 57, 153);
+        text-decoration: underline;
+        margin: 20px 0px;
+    }
+}
+
+// Estilos para la estructura de productos
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .productos {
+        text-align: center;
+        margin: 10px;
+        flex: 0 0 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+
+        .imgproductos {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+// Estilos para el mapa
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+}
+
+.puntodeentrega {
+    text-transform: uppercase;
+    background-color: rgb(19, 18, 18);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+// Estilos para el pie de página
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
